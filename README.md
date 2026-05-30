@@ -43,7 +43,21 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
    - Backend: `http://localhost:8080`
    - Frontend: `http://localhost:3000`
 
-5. Bajar los contenedores con `make down`.
+5. Datos de ejemplo:
+
+   Para cargar tareas de ejemplo, usar:
+
+   ```sh
+   make seed
+   ```
+
+   O levantar la aplicación e importar datos en un solo paso con:
+
+   ```sh
+   make up-seed
+   ```
+
+6. Bajar los contenedores con `make down`.
 
 ## Comandos
 
