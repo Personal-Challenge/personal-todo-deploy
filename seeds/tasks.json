@@ -1,0 +1,162 @@
+[
+  {
+    "titulo": "Configurar entorno Docker",
+    "descripcion": "Verificar que backend, frontend y MongoDB levanten con Docker Compose.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T10:00:00.000Z"
+    }
+  },
+  {
+    "titulo": "Revisar conexion del backend",
+    "descripcion": "Confirmar que Mongoose use el hostname mongo dentro de la red Docker.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T10:15:00.000Z"
+    }
+  },
+  {
+    "titulo": "Probar flujo de tareas",
+    "descripcion": "Crear, actualizar, filtrar y eliminar tareas desde el frontend.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T10:30:00.000Z"
+    }
+  },
+  {
+    "titulo": "Documentar despliegue local",
+    "descripcion": "Mantener el README actualizado con comandos de Compose y seed de datos.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T10:45:00.000Z"
+    }
+  },
+  {
+    "titulo": "Implementar drag and drop",
+    "descripcion": "Permitir mover tarjetas entre columnas tipo Kanban para actualizar el estado.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T11:00:00.000Z"
+    }
+  },
+  {
+    "titulo": "Agregar validaciones en formularios",
+    "descripcion": "Validar campos obligatorios usando Yup y Formik en el frontend.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T11:10:00.000Z"
+    }
+  },
+  {
+    "titulo": "Crear endpoint healthcheck",
+    "descripcion": "Agregar endpoint /health para monitorear el estado del backend.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T11:20:00.000Z"
+    }
+  },
+  {
+    "titulo": "Configurar variables de entorno",
+    "descripcion": "Separar configuraciones locales y productivas usando archivos .env.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T11:35:00.000Z"
+    }
+  },
+  {
+    "titulo": "Optimizar imagenes Docker",
+    "descripcion": "Reducir tamaño de las imágenes utilizando multi-stage builds.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T11:50:00.000Z"
+    }
+  },
+  {
+    "titulo": "Integrar MongoDB Atlas",
+    "descripcion": "Permitir conexión remota opcional utilizando MongoDB Atlas.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T12:05:00.000Z"
+    }
+  },
+  {
+    "titulo": "Agregar loading en frontend",
+    "descripcion": "Mostrar spinner mientras se cargan tareas desde la API.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T12:20:00.000Z"
+    }
+  },
+  {
+    "titulo": "Implementar manejo de errores",
+    "descripcion": "Centralizar respuestas de error en Express con middleware dedicado.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T12:35:00.000Z"
+    }
+  },
+  {
+    "titulo": "Crear coleccion Postman",
+    "descripcion": "Documentar endpoints CRUD de tareas para pruebas manuales.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T12:50:00.000Z"
+    }
+  },
+  {
+    "titulo": "Agregar filtros por estado",
+    "descripcion": "Permitir visualizar tareas pendientes, en curso o finalizadas.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T13:05:00.000Z"
+    }
+  },
+  {
+    "titulo": "Configurar proxy en Vite",
+    "descripcion": "Evitar problemas de CORS redireccionando llamadas API desde el frontend.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T13:20:00.000Z"
+    }
+  },
+  {
+    "titulo": "Agregar soporte mobile",
+    "descripcion": "Adaptar tablero Kanban para pantallas pequeñas y dispositivos móviles.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T13:40:00.000Z"
+    }
+  },
+  {
+    "titulo": "Configurar seed automatico",
+    "descripcion": "Cargar tareas de ejemplo al iniciar MongoDB en entorno local.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T13:55:00.000Z"
+    }
+  },
+  {
+    "titulo": "Crear pipeline CI",
+    "descripcion": "Ejecutar tests y lint automaticamente en GitHub Actions.",
+    "estado": "PENDIENTE",
+    "fecha_creacion": {
+      "$date": "2026-05-30T14:10:00.000Z"
+    }
+  },
+  {
+    "titulo": "Implementar tema visual Personal",
+    "descripcion": "Aplicar colores corporativos y estilos modernos inspirados en Personal.",
+    "estado": "EN_CURSO",
+    "fecha_creacion": {
+      "$date": "2026-05-30T14:25:00.000Z"
+    }
+  },
+  {
+    "titulo": "Publicar repositorio deploy",
+    "descripcion": "Subir docker-compose y configuraciones al repositorio personal-todo-deploy.",
+    "estado": "FINALIZADA",
+    "fecha_creacion": {
+      "$date": "2026-05-30T14:40:00.000Z"
+    }
+  }
+]
