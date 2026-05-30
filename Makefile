@@ -1,4 +1,4 @@
-SHELL := /bin/sh
+BASH ?= bash
 
 .PHONY: setup up up-detached up-seed build down restart logs ps pull seed clean help
 
@@ -20,7 +20,7 @@ help:
 	@echo "  make clean    - Baja contenedores y borra volumenes"
 
 setup:
-	./setup.sh
+	$(BASH) ./setup.sh
 
 up:
 	docker compose up --build
@@ -45,7 +45,7 @@ ps:
 	docker compose ps
 
 pull:
-	./setup.sh
+	$(BASH) ./setup.sh
 
 seed:
 	docker compose exec -T mongo mongoimport --uri "$(MONGO_URI)" --collection tasks --jsonArray --drop --file /dev/stdin < $(TASKS_SEED)
