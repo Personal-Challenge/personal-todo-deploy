@@ -1,0 +1,57 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: personal-todo-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - personal-todo-network
+
+  backend:
+    build:
+      context: ./backend
+    container_name: personal-todo-backend
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: ${BACKEND_PORT:-8080}
+      MONGO_URI: ${MONGO_URI}
+    ports:
+      - "${BACKEND_PORT:-8080}:8080"
+    depends_on:
+      - mongo
+    networks:
+      - personal-todo-network
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8080}
+        VITE_TASKS_ENDPOINT: ${VITE_TASKS_ENDPOINT:-/tasks}
+    container_name: personal-todo-frontend
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    depends_on:
+      - backend
+    networks:
+      - personal-todo-network
+
+networks:
+  personal-todo-network:
+    name: personal-todo-network
+    driver: bridge
+
+volumes:
+  mongo_data:
