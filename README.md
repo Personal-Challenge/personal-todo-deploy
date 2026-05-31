@@ -29,7 +29,7 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
    `make setup` (Linux/MacOS) o `./setup.sh` (Windows)
 
-   El script clona la rama `main` los siguientes repositorios del proyecto:
+   El script clona la rama `main` de los siguientes repositorios del proyecto:
 
    - `https://github.com/Personal-Challenge/personal-todo-backend.git` en `backend/`
    - `https://github.com/Personal-Challenge/personal-todo-frontend.git` en `frontend/`
