@@ -29,39 +29,35 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
    `make setup` (Linux/MacOS) o `./setup.sh` (Windows)
 
-   El script clona desde la rama `main`:
+   El script clona la rama `main` los siguientes repositorios del proyecto:
 
    - `https://github.com/Personal-Challenge/personal-todo-backend.git` en `backend/`
    - `https://github.com/Personal-Challenge/personal-todo-frontend.git` en `frontend/`
 
 3. Revisar variables de entorno:
 
-   ``make setup` crea `.env` automáticamente si no existe. Revisar ese archivo antes de levantar la aplicación.
+   `make setup` crea el archivo `.env` automáticamente si no existe. Revisar ese archivo antes de levantar la aplicación.
 
 4. Levantar la aplicacion:
 
    `make up` (Linux/MacOS) o `docker compose up --build` (Windows)
 
-   Asegurate de tener Docker corriendo antes de ejecutar el comando. Por defecto:
+   > Asegurate de tener Docker corriendo antes de ejecutar el comando. 
+   
+   Las rutas por defecto son:
 
    - Backend: `http://localhost:8080`
    - Frontend: `http://localhost:3000`
 
-5. Datos de ejemplo:
+5. Para cargar tareas de ejemplo, usar:
 
-   Para cargar tareas de ejemplo, usar:
+   `make seed`
+   
+   > Asegurate que los servicios esten levantados.
 
-   ```sh
-   make seed
-   ```
+6. Para bajar los contenedores usas:
 
-   O levantar la aplicación e importar datos en un solo paso con:
-
-   ```sh
-   make up-seed
-   ```
-
-6. Bajar los contenedores con `make down`.
+    `make down`
 
 ## Comandos
 
