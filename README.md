@@ -4,9 +4,17 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
 ## Requisitos
 
+### Linux/MacOS
+- Docker Desktop
 - Git
-- Docker
-- Docker Compose v2 disponible como `docker compose`
+- make
+
+### Windows 11
+
+- Docker Desktop
+- Git
+- WSL2
+- make
 
 ## Uso
 
@@ -19,9 +27,7 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
 2. Ejecutar el setup:
 
-   ```sh
-   ./setup.sh (o `make setup` Linux/MacOS)
-   ```
+   `make setup` (Linux/MacOS) o `./setup.sh` (Windows)
 
    El script clona desde la rama `main`:
 
@@ -34,9 +40,7 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
 4. Levantar la aplicacion:
 
-   ```sh
-   make up
-   ```
+   `make up` (Linux/MacOS) o `docker compose up --build` (Windows)
 
    Asegurate de tener Docker corriendo antes de ejecutar el comando. Por defecto:
 
