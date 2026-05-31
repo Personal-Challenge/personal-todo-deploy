@@ -7,17 +7,18 @@ TASKS_SEED := seeds/tasks.json
 
 help:
 	@echo "Targets disponibles:"
-	@echo "  make setup    - Clona o actualiza backend y frontend"
-	@echo "  make up       - Levanta la aplicacion con build"
-	@echo "  make up-seed  - Levanta la aplicacion en segundo plano e importa tareas"
-	@echo "  make build    - Construye las imagenes"
-	@echo "  make down     - Baja los contenedores"
-	@echo "  make restart  - Baja y vuelve a levantar"
-	@echo "  make logs     - Muestra logs"
-	@echo "  make ps       - Muestra estado de servicios"
-	@echo "  make pull     - Actualiza backend y frontend"
-	@echo "  make seed     - Importa tareas de ejemplo en MongoDB"
-	@echo "  make clean    - Baja contenedores y borra volumenes"
+	@echo "  make setup    		- Clona o actualiza backend y frontend"
+	@echo "  make up			- Levanta la aplicacion con build"
+	@echo "  make up-detached	- Levanta la aplicacion con build"
+	@echo "  make up-seed  		- Levanta la aplicacion en segundo plano e importa tareas"
+	@echo "  make build    		- Construye las imagenes"
+	@echo "  make down     		- Baja los contenedores"
+	@echo "  make restart  		- Baja y vuelve a levantar"
+	@echo "  make logs     		- Muestra logs"
+	@echo "  make ps       		- Muestra estado de servicios"
+	@echo "  make pull     		- Actualiza backend y frontend"
+	@echo "  make seed     		- Importa tareas de ejemplo en MongoDB"
+	@echo "  make clean    		- Baja contenedores y borra volumenes"
 
 setup:
 	$(BASH) ./setup.sh
