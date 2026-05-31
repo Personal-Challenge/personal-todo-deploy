@@ -42,20 +42,20 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
    `make up` (Linux/MacOS) o `docker compose up --build` (Windows)
 
-   > Asegurate de tener Docker corriendo antes de ejecutar el comando. 
-   
-   Las rutas por defecto son:
+   > Asegurate de tener Docker corriendo antes de ejecutar el comando.
+
+   Una vez levantados los contenedores, los servicios quedan disponibles en:
 
    - Backend: `http://localhost:8080`
    - Frontend: `http://localhost:3000`
 
-5. Para cargar tareas de ejemplo, usar:
+6. Para cargar tareas de ejemplo, usas:
 
    `make seed`
    
    > Asegurate que los servicios esten levantados.
 
-6. Para bajar los contenedores usas:
+7. Para bajar los contenedores usas:
 
     `make down`
 
@@ -113,7 +113,7 @@ Docker Compose levanta tres servicios:
 - `backend`: API disponible en `http://localhost:8080`.
 - `frontend`: aplicación web disponible en `http://localhost:3000`.
 
-Para conectarte a MongoDB desde la máquina host, usa:
+Para conectarte a MongoDB desde la máquina host, usas:
 
 ```sh
 mongosh "mongodb://admin:admin123@localhost:27017/todoapp?authSource=admin"
