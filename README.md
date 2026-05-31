@@ -38,7 +38,7 @@ Repositorio de despliegue para levantar la aplicación Personal Todo con Docker 
 
    `make setup` crea el archivo `.env` automáticamente si no existe. Revisar ese archivo antes de levantar la aplicación.
 
-4. Levantar la aplicacion:
+4. Levantar la aplicación:
 
    `make up` (Linux/MacOS) o `docker compose up --build` (Windows)
 
